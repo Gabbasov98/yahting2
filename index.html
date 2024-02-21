@@ -254,7 +254,7 @@
                         </div>
                         <div class="main__col2">
 
-                            <a href="videos/Countdown7.mp4" data-fancybox class="main__img">
+                            <div class="main__img main__img--stories _show-stories">
                                 <div class="avatar">
                                     <div class="avatar__inner">
                                         <img src="img/avatar.jpg" alt="">
@@ -264,7 +264,7 @@
                                     <span>Смотреть</span>
                                     <img src="img/play.svg" alt="">
                                 </div>
-                            </a>
+                            </div>
 
                         </div>
 
@@ -1667,7 +1667,7 @@
                                     <img src="img/course-img4.webp" alt="">
                                 </div>
                                 <div class="course-card__title text22 semi-bold-text">
-                                    Готовиться к покупке лодки с бюджетом более 30 000 евро (скоро!)
+                                    Готовимся к покупке лодки с бюджетом до 30 000 евро (скоро!)
                                 </div>
                                 <button class="course-card__btn">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1702,7 +1702,7 @@
                                     <img src="img/course-img5.webp" alt="">
                                 </div>
                                 <div class="course-card__title text22 semi-bold-text">
-                                    Как можно потерять действительно большие деньги? (скоро!)
+                                    Готовиться к покупке лодки с бюджетом более 30 000 евро (скоро!)
                                 </div>
                                 <button class="course-card__btn">
                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3425,8 +3425,8 @@
                                 </button>
                             </div>
                             <div class="course-card__hidden">
-                                <div class="course-card__img51">
-                                    <img src="img/course-img.webp" alt="">
+                                <div class="course-card__img">
+                                    <img src="img/course-img51.webp" alt="">
                                 </div>
                                 <div class="text">
                                     <ul>
@@ -6851,7 +6851,85 @@
         </footer>
     </div>
 
+    <div class="stories-modal">
+        <div class="stories-modal__bg _hide-stories"></div>
+        <button class="stories-modal__close _hide-stories">
+            <svg aria-label="Close" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
+                <title>Close</title>
+                <polyline fill="none" points="20.643 3.357 12 12 3.353 20.647" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></polyline>
+                <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" x1="20.649" x2="3.354" y1="20.649" y2="3.354"></line>
+            </svg>
+        </button>
+
+        <div class="stories-modal__dialog">
+            <div class="stories-slider">
+                <div class="swiper-container story__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide story__slide">
+                            <div class="story-card">
+                                <div class="story-card__inner">
+                                    <img src="img/story.webp" alt="" class="story-card__img">
+                                    <div class="story-card__text">
+                                        <div class="text">
+                                            Text for description .... <br>
+                                        Text for description
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide story__slide _video">
+                            <div class="story-card">
+                                <div class="story-card__inner">
+                                    <video autoplay muted class="story-card__video" src="videos/Countdown7.mp4"></video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide story__slide">
+                            <div class="story-card">
+                                <div class="story-card__inner">
+                                    <img src="img/community.webp" alt="" class="story-card__img">
+                                    <div class="story-card__text">
+                                        <div class="text">
+                                            Text for description .... <br>
+                                        Text for description
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide story__slide">
+                            <div class="story-card">
+                                <div class="story-card__inner">
+                                    <img src="img/story.webp" alt="" class="story-card__img">
+                                    <div class="story-card__text">
+                                        <div class="text">
+                                            Text for description .... <br>
+                                        Text for description
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story__pagination swiper-pagination"></div>
+                </div>
+                <div class="story__prev swiper-button swiper-button-prev m-btn-orange">
+                    <svg width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.46967 5.46967C0.176777 5.76256 0.176777 6.23744 0.46967 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.46967 5.46967ZM1 6.75H22.0623V5.25H1V6.75Z" fill="white" />
+                    </svg>
+                </div>
+                <div class="story__next swiper-button swiper-button-next m-btn-orange">
+                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5926 6.53033C21.8855 6.23744 21.8855 5.76256 21.5926 5.46967L16.8197 0.696699C16.5268 0.403806 16.0519 0.403806 15.759 0.696699C15.4661 0.989593 15.4661 1.46447 15.759 1.75736L20.0016 6L15.759 10.2426C15.4661 10.5355 15.4661 11.0104 15.759 11.3033C16.0519 11.5962 16.5268 11.5962 16.8197 11.3033L21.5926 6.53033ZM0 6.75H21.0623V5.25H0V6.75Z" fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/libs.min.js"></script>
+    <!--<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>-->
     <script src="js/main.min.js"></script>
     <div class="modal book-modal" id="bookModal">
         <div class="modal__bg _close-modal"></div>
